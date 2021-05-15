@@ -1,0 +1,257 @@
+html 
+    head 
+        link(rel="stylesheet" href="/css/styles.css")
+    body 
+        h1 MoviesAPI Documentation
+        p   MoviesAPI is a REST API that serves and creates movies upon request
+        h1 GET api/movies
+        p Returns all movies from the Database
+        h2 Request:
+        #content
+        p(class="request") 
+            |
+            b const express = require('express');
+            |
+            br
+            |
+            |
+            br
+            |
+            b app.get('http://localhost/api/movies') 
+            |
+            br
+            |
+            b .then function () {
+            |
+            br
+            |
+            b }
+        h2 Response:
+        p(class="box-1")
+            b [
+            |
+            br
+            | 
+            br
+            |
+            b {
+            |
+            br
+            |
+            b id: 0,
+            |
+            br
+            |
+            b title: "The Godfather",
+            |
+            br
+            |
+            b director: "Francis Ford Coppola",
+            |
+            br
+            |
+            b Metascore: 100,
+            |
+            br
+            |
+            b stars: ['Marlon Brando', 'Al Pacino', 'Robert Duvall'],
+            |
+            br 
+            |
+            b },
+            |
+            br
+            |
+            br
+            |
+            b {
+            |
+            br
+            |
+            b id: 1,
+            |
+            br
+            |
+            b  title: "Star Wars",
+            |
+            br
+            |
+            b director: "George Lucas",
+            |
+            br
+            |
+            b metascore: 92,
+            |
+            br
+            |
+            b stars: ['Elijah Wood', 'Ian McKellen', 'Orlando Bloom'],
+            |
+            br
+            |
+            b },
+            |
+            br
+            |
+            b
+            |
+            br
+            |
+            b {Movies continues here....}
+            |
+            br
+            |
+            b
+            |
+            br
+            b ]
+        h1 GET api/movies/{:id}
+        p Returns a single movie from the database based on the movies ID
+        h2 Request:
+        p(class="request")
+            |
+            b const express = require('express');
+            |
+            br
+            |
+            |
+            br
+            |
+            b app.get('http://localhost/api/movies/:id') 
+            |
+            br
+            |
+            b .then function () {
+            |
+            br
+            |
+            b }
+        h2 Response:
+        p(class="getById")
+            b [
+            |
+            br
+            | 
+            br
+            |
+            b {
+            |
+            br
+            |
+            b id: 0,
+            |
+            br
+            |
+            b title: "The Godfather",
+            |
+            br
+            |
+            b director: "Francis Ford Coppola",
+            |
+            br
+            |
+            b Metascore: 100,
+            |
+            br
+            |
+            b stars: ['Marlon Brando', 'Al Pacino', 'Robert Duvall'],
+            |
+            br
+            |
+            br
+            |
+            b }
+        h1 POST api/movies/
+        p Add a movie to the database
+        h2 Request:
+        p(class="box-1")
+            | 
+            b const express = require('express');
+            |
+            br
+            |
+            br
+            |
+            b app.post('http://localhost/api/movie/7'
+            |
+            br
+            |
+            b {
+            |
+            br
+            |
+            b id: 7,
+            |
+            br
+            |
+            b title: "The Godfather",
+            |
+            br
+            |
+            b director: "Francis Ford Coppola",
+            |
+            br
+            |
+            b metascore: 100,
+            |
+            br
+            |
+            b stars: ["Marlon", "Al Pacino", "Robert Duvall"]
+            |
+            br
+            |
+            br
+            |
+            b })
+            |
+            br
+            |
+            b .then(function(res) {
+            |
+            br
+            |
+            b //condition goes here which always runs
+            |
+            br
+            b })
+        h2 Response:
+        p(class="post-Response")
+            |
+            b {
+            |
+            br
+            |
+            b id: 7,
+            |
+            br
+            |
+            b title: "The Godfather",
+            |
+            br
+            |
+            b director: "Francis Ford Coppola",
+            |
+            br
+            |
+            b metascore: 100,
+            |
+            br
+            |
+            b stars: ["Marlon", "Al Pacino", "Robert Duvall"]
+            |
+            br
+            |
+            br
+            |
+            b }
+            |
+            br
+            |
+            br
+            |
+            b { Successfully created another movies object}
+    
+        
+       
+
+
+

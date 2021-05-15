@@ -1,0 +1,12 @@
+html 
+    head 
+        link(rel="stylesheet" href="/css/styles.css")
+    body 
+        h1 Movies
+        for movie in movies
+            table(style='width:50%', border='1')
+            a(href=`/movie/${movie.id}`)= movie.title
+            p= movie.director
+            p= movie.metascore 
+            p= movie.stars
+            

@@ -44,7 +44,7 @@ body {
     display: block;
     padding: 20px;
     width: 65%;
-    height: 15%;
+    height: 30%;
     border-radius: 15px;
 } 
 .post-Response {
@@ -53,7 +53,7 @@ body {
     display: block;
     padding: 20px;
     width: 65%;
-    height: 268;
+    height: 30;
     border-radius: 15px;
 }
 
